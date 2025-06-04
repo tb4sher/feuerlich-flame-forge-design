@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Flame } from "lucide-react";
+import { ArrowRight, Flame, Phone, Calendar } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-fire-500/10 border border-fire-500/20 rounded-full px-4 py-2 mb-8 animate-fade-in">
             <Flame className="h-4 w-4 text-fire-500" />
-            <span className="text-fire-500 text-sm font-medium">Premium Kamine & Öfen</span>
+            <span className="text-fire-500 text-sm font-medium">Premium Kamine & Öfen seit 2009</span>
           </div>
 
           {/* Headline */}
@@ -31,15 +31,32 @@ const Hero = () => {
             Entdecken Sie unsere exquisite Auswahl an Kaminen, Öfen und Feuerstellen für ein gemütliches Ambiente in Ihrem Zuhause.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-            <Button className="fire-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
-              Produkte entdecken
-              <ArrowRight className="ml-2 h-5 w-5" />
+          {/* Enhanced CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in mb-8">
+            <Button className="fire-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg group">
+              <span>Kostenlose Beratung</span>
+              <Phone className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
             </Button>
-            <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-6 text-lg">
-              Beratung anfragen
+            <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-6 text-lg group">
+              <span>Showroom besuchen</span>
+              <Calendar className="ml-2 h-5 w-5 group-hover:scale-110 transition-transform" />
             </Button>
+          </div>
+
+          {/* Value Proposition */}
+          <div className="inline-flex items-center space-x-6 bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 shadow-sm border border-gray-200 animate-fade-in">
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <span className="text-sm text-gray-600">Kostenlose Beratung</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <span className="text-sm text-gray-600">15 Jahre Garantie</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+              <span className="text-sm text-gray-600">TÜV zertifiziert</span>
+            </div>
           </div>
 
           {/* Stats */}
@@ -53,8 +70,8 @@ const Hero = () => {
               <div className="text-gray-600 mt-2">Jahre Erfahrung</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold fire-text-gradient">200+</div>
-              <div className="text-gray-600 mt-2">Produkte</div>
+              <div className="text-3xl md:text-4xl font-bold fire-text-gradient">98%</div>
+              <div className="text-gray-600 mt-2">Zufriedenheitsrate</div>
             </div>
           </div>
         </div>
