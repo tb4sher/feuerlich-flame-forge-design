@@ -1,0 +1,71 @@
+
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Flame } from "lucide-react";
+
+const Hero = () => {
+  return (
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23dc2626" fill-opacity="0.05"%3E%3Ccircle cx="30" cy="30" r="2"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-4 text-center">
+        <div className="max-w-4xl mx-auto">
+          {/* Badge */}
+          <div className="inline-flex items-center space-x-2 bg-fire-500/10 border border-fire-500/20 rounded-full px-4 py-2 mb-8 animate-fade-in">
+            <Flame className="h-4 w-4 text-fire-500" />
+            <span className="text-fire-500 text-sm font-medium">Premium Kamine & Öfen</span>
+          </div>
+
+          {/* Headline */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+            <span className="block text-white">Wärme die</span>
+            <span className="block fire-text-gradient">Ihr Zuhause</span>
+            <span className="block text-white">verwandelt</span>
+          </h1>
+
+          {/* Subheadline */}
+          <p className="text-xl md:text-2xl text-zinc-400 mb-8 max-w-2xl mx-auto animate-fade-in">
+            Entdecken Sie unsere exquisite Auswahl an Kaminen, Öfen und Feuerstellen für ein gemütliches Ambiente in Ihrem Zuhause.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+            <Button className="fire-gradient text-white hover:opacity-90 transition-opacity px-8 py-6 text-lg">
+              Produkte entdecken
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+            <Button variant="outline" className="border-zinc-600 text-zinc-300 hover:bg-zinc-800 px-8 py-6 text-lg">
+              Beratung anfragen
+            </Button>
+          </div>
+
+          {/* Stats */}
+          <div className="grid grid-cols-3 gap-8 mt-16 animate-fade-in">
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold fire-text-gradient">500+</div>
+              <div className="text-zinc-400 mt-2">Zufriedene Kunden</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold fire-text-gradient">15+</div>
+              <div className="text-zinc-400 mt-2">Jahre Erfahrung</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl md:text-4xl font-bold fire-text-gradient">200+</div>
+              <div className="text-zinc-400 mt-2">Produkte</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Floating Elements */}
+      <div className="absolute top-20 left-10 w-2 h-2 bg-fire-500 rounded-full animate-ping opacity-75"></div>
+      <div className="absolute bottom-32 right-16 w-3 h-3 bg-amber-500 rounded-full animate-pulse opacity-50"></div>
+      <div className="absolute top-1/2 right-8 w-1 h-1 bg-fire-400 rounded-full animate-ping opacity-60"></div>
+    </section>
+  );
+};
+
+export default Hero;
