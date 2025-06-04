@@ -6,8 +6,8 @@ const Hero = () => {
   return (
     <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%2523dc2626%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50 via-white to-gray-100">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23dc2626%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
       </div>
 
       {/* Content */}
@@ -21,13 +21,13 @@ const Hero = () => {
 
           {/* Headline */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            <span className="block text-white">Wärme die</span>
+            <span className="block text-gray-800">Wärme die</span>
             <span className="block fire-text-gradient">Ihr Zuhause</span>
-            <span className="block text-white">verwandelt</span>
+            <span className="block text-gray-800">verwandelt</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-zinc-400 mb-8 max-w-2xl mx-auto animate-fade-in">
+          <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto animate-fade-in">
             Entdecken Sie unsere exquisite Auswahl an Kaminen, Öfen und Feuerstellen für ein gemütliches Ambiente in Ihrem Zuhause.
           </p>
 
@@ -37,7 +37,7 @@ const Hero = () => {
               Produkte entdecken
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" className="border-zinc-600 text-zinc-300 hover:bg-zinc-800 px-8 py-6 text-lg">
+            <Button variant="outline" className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-6 text-lg">
               Beratung anfragen
             </Button>
           </div>
@@ -46,15 +46,15 @@ const Hero = () => {
           <div className="grid grid-cols-3 gap-8 mt-16 animate-fade-in">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold fire-text-gradient">500+</div>
-              <div className="text-zinc-400 mt-2">Zufriedene Kunden</div>
+              <div className="text-gray-600 mt-2">Zufriedene Kunden</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold fire-text-gradient">15+</div>
-              <div className="text-zinc-400 mt-2">Jahre Erfahrung</div>
+              <div className="text-gray-600 mt-2">Jahre Erfahrung</div>
             </div>
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold fire-text-gradient">200+</div>
-              <div className="text-zinc-400 mt-2">Produkte</div>
+              <div className="text-gray-600 mt-2">Produkte</div>
             </div>
           </div>
         </div>

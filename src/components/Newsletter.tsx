@@ -6,9 +6,9 @@ import { Mail, Gift, Flame } from "lucide-react";
 
 const Newsletter = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900">
+    <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-gray-100">
       <div className="container mx-auto px-4">
-        <Card className="bg-zinc-800/50 border-zinc-700 max-w-4xl mx-auto overflow-hidden">
+        <Card className="bg-white border-gray-200 max-w-4xl mx-auto overflow-hidden shadow-lg">
           <CardContent className="p-0">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               {/* Content */}
@@ -18,11 +18,11 @@ const Newsletter = () => {
                   <span className="text-fire-500 font-medium">Newsletter</span>
                 </div>
                 
-                <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                <h3 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                   Bleiben Sie <span className="fire-text-gradient">warm</span> informiert
                 </h3>
                 
-                <p className="text-zinc-400 mb-6">
+                <p className="text-gray-600 mb-6">
                   Erhalten Sie exklusive Angebote, Produktneuheiten und Expertentipps direkt in Ihr Postfach.
                 </p>
 
@@ -34,7 +34,7 @@ const Newsletter = () => {
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Input 
                     placeholder="Ihre E-Mail-Adresse" 
-                    className="bg-zinc-700 border-zinc-600 text-white placeholder:text-zinc-400 flex-1"
+                    className="bg-white border-gray-300 text-gray-800 placeholder:text-gray-500 flex-1"
                   />
                   <Button className="fire-gradient text-white hover:opacity-90 px-6">
                     <Mail className="h-4 w-4 mr-2" />
@@ -42,13 +42,13 @@ const Newsletter = () => {
                   </Button>
                 </div>
 
-                <p className="text-xs text-zinc-500 mt-3">
+                <p className="text-xs text-gray-500 mt-3">
                   Mit der Anmeldung stimmen Sie unseren Datenschutzbestimmungen zu.
                 </p>
               </div>
 
               {/* Visual */}
-              <div className="relative bg-gradient-to-br from-fire-600/20 to-amber-600/20 p-8 lg:p-12 flex items-center justify-center">
+              <div className="relative bg-gradient-to-br from-fire-50 to-amber-50 p-8 lg:p-12 flex items-center justify-center">
                 <div className="relative">
                   <div className="w-32 h-32 bg-gradient-to-br from-fire-500 to-amber-500 rounded-full animate-glow opacity-20"></div>
                   <div className="absolute inset-0 flex items-center justify-center">

@@ -52,13 +52,13 @@ const featuredProducts = [
 
 const FeaturedProducts = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             <span className="fire-text-gradient">Featured</span> Products
           </h2>
-          <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Unsere beliebtesten und bestbewerteten Produkte für Ihr Zuhause
           </p>
         </div>
@@ -67,7 +67,7 @@ const FeaturedProducts = () => {
           {featuredProducts.map((product, index) => (
             <Card 
               key={product.id} 
-              className="bg-zinc-800/50 border-zinc-700 hover-lift group overflow-hidden"
+              className="bg-white border-gray-200 hover-lift group overflow-hidden shadow-sm"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="relative overflow-hidden">
@@ -100,14 +100,14 @@ const FeaturedProducts = () => {
                     {[...Array(5)].map((_, i) => (
                       <Star 
                         key={i} 
-                        className={`h-4 w-4 ${i < Math.floor(product.rating) ? 'text-amber-500 fill-current' : 'text-zinc-600'}`} 
+                        className={`h-4 w-4 ${i < Math.floor(product.rating) ? 'text-amber-500 fill-current' : 'text-gray-300'}`} 
                       />
                     ))}
                   </div>
-                  <span className="text-sm text-zinc-400 ml-2">({product.reviews})</span>
+                  <span className="text-sm text-gray-500 ml-2">({product.reviews})</span>
                 </div>
                 
-                <h3 className="font-bold text-white mb-2 group-hover:text-fire-500 transition-colors">
+                <h3 className="font-bold text-gray-800 mb-2 group-hover:text-fire-500 transition-colors">
                   {product.name}
                 </h3>
                 
@@ -115,7 +115,7 @@ const FeaturedProducts = () => {
                   <div className="flex items-center space-x-2">
                     <span className="text-xl font-bold text-fire-500">€{product.price}</span>
                     {product.originalPrice && (
-                      <span className="text-sm text-zinc-500 line-through">€{product.originalPrice}</span>
+                      <span className="text-sm text-gray-500 line-through">€{product.originalPrice}</span>
                     )}
                   </div>
                 </div>
